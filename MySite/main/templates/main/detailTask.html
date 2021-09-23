@@ -1,0 +1,11 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Задача
+{% endblock%}
+
+{% block content %}
+    <h1>Задача</h1>
+    <h1><a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'home' %}">Главная</a>{task.title}</h1>
+    <p>{task.task}</p>
+{% endblock %}
